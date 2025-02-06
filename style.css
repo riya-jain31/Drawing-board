@@ -1,0 +1,50 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.heading {
+    text-align: center;
+    padding: 2vh 0;
+}
+
+.draw-board-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.draw-board {
+    width: 416px;
+    height: 416px;
+    /* background-color: aqua; */
+    /* border: 2px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+}
+.child {
+    height: 52px;
+    width: 52px;
+    border: 1px solid black;
+}
+
+.tools {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4vw;
+    padding: 2vh 0;
+}
+
+.tools button {
+    padding: 8px 16px;
+    background-color: yellow;
+    border: 1px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+}
