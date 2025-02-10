@@ -3,7 +3,14 @@ const boxes = document.querySelectorAll(".child"); // 64 --> array
 const eraserBtn = document.getElementById("eraser-button");
 const input = document.getElementById("my-input");
 
+const boardMain =document.getElementById("board-main");
+const downloadBtn = document.getElementById("download-btn");
+
+
 let color = "black";
+
+downloadBtn.onclick =download ;
+
 
 // input.onchange = () => {
 //   color = input.value;
@@ -34,6 +41,12 @@ boxes[i].onmouseenter = () => {
 }
 
 function setColor() {
-const userChoice = prompt("Enter color");
+// const userChoice = prompt("Enter color");
+const userChoice = input.value ;
 color = userChoice;
+}
+
+function download(){
+
+    let downloadfile = boardMain.innerHTML ;
 }

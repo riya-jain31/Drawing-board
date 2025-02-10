@@ -6,17 +6,28 @@
 
 body {
     font-family: sans-serif;
+    background-color: #a1e4cd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .heading {
+    width: 100%;
     text-align: center;
     padding: 2vh 0;
+    background-color: #caa3ca;
 }
 
 .draw-board-container {
     display: flex;
     align-items: center;
     justify-content: center;
+    background: transparent;
+    background-color: white;
+    width: 500px;
+    height: 500px;
 }
 
 .draw-board {
@@ -47,4 +58,7 @@ body {
     border: 1px solid black;
     border-radius: 4px;
     cursor: pointer;
+}
+button:hover{
+    background-color: #6e4d4b;
 }
